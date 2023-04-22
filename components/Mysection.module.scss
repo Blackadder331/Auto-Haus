@@ -1,0 +1,81 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  // justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: center;
+  position: relative;
+  img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    z-index: 20;
+    // font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 42ch;
+    padding: 0 2.5rem;
+    margin: 0 2.5;
+  }
+  .banner {
+    z-index: 18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(16, 16, 16, 0.65);
+    height: 100%;
+    padding-left: 3%;
+
+  }
+
+  .copy {
+    h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
+      font-weight: 200;
+      max-width: 21ch;
+      // margin-top: 35vh;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 5rem;
+      }
+    }
+  }
+  .downarrow {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url("/images/downarrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+}
+
+// .Mysection_section__4kpJi {
+//   height: 100vh;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   scroll-snap-align: center;
+//   position: relative;
+//   flex-direction: column;
+// }

@@ -4,7 +4,7 @@
   display: flex;
   // justify-content: center;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   scroll-snap-align: center;
   position: relative;
   img {
@@ -25,6 +25,7 @@
     width: 42ch;
     padding: 0 2.5rem;
     margin: 0 2.5;
+    line-height: 1.5;
   }
   .banner {
     z-index: 18;
@@ -34,7 +35,6 @@
     background-color: rgba(16, 16, 16, 0.65);
     height: 100%;
     padding-left: 3%;
-
   }
 
   .copy {
@@ -42,30 +42,40 @@
       position: relative;
       z-index: 1;
       font-size: 3rem;
-      font-weight: 200;
-      max-width: 21ch;
-      // margin-top: 35vh;
+      font-weight: 100;
+      max-width: 27ch;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 10px;
       color: #fff;
       text-align: center;
+
       @media (min-width: 768px) {
         font-size: 5rem;
+        text-align: right;
+        padding-right: 5vw;
+        padding-top: 69vh;
+        padding-bottom: 10rem;
       }
     }
   }
   .downarrow {
     position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
+    bottom: 5rem;
+    right: 6vw;
     margin: 0 auto;
-    background-image: url("/images/downarrow.svg");
+    background-image: url("/images/arrow-down-2.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 40px;
+    width: 35px;
     height: 40px;
     z-index: 2;
+
+    transition: 0.8s ease-in-out;
+  }
+  .downarrow:hover {
+    opacity: 0.8;
+    bottom: 4.5rem;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
 

@@ -6,6 +6,11 @@ body {
   font-family: Garamond, serf;
   font-weight: 100 !important;
   letter-spacing: -0.1em;
+
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 
 a {
@@ -45,18 +50,18 @@ aside ul {
 
 aside ul li .indicator {
   cursor: pointer;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: block;
   height: 15px;
   width: 15px;
   border-radius: 50%;
   // background-color: #00f3ce;
-  background-color: #17d0ca;
+  background-color: #6b7284;
   opacity: 0.7;
 }
 
 aside ul li .active {
-  transform: scale(1.7);
+  transform: scale(1.65);
   transition: transform 200ms ease-in-out;
   opacity: 0.9;
 }

@@ -29,8 +29,8 @@ export default function Home() {
         <div ref={section1} className="active" id="first">
           <Mysection
             image={`/images/6.png`}
-            title={"A kinetic revolution"}
-            headline={`Lorem Ipsum Dolor Sit Amet`}
+            title={`A kinetic revolution`}
+            headline={`powered sustainably by seaweed biofuel`}
             goToSectionRef={section2}
             scrollTo={scrollTo}
             showArrow={true}
@@ -38,9 +38,9 @@ export default function Home() {
         </div>
         <div ref={section2} id="second">
           <Mysection
-            image={`/images/2.png`}
-            title={"Science meets science fition"}
-            headline={`Lorem Ipsum Dolor Sit Amet`}
+            image={`/images/t4.png`}
+            title={`Science meets science fition`}
+            headline={`250,000km on A single fuel cell charge`}
             goToSectionRef={section3}
             scrollTo={scrollTo}
             showArrow={true}
@@ -48,26 +48,29 @@ export default function Home() {
         </div>
         <div ref={section3} id="third">
           <Mysection
-            image={`/images/8.png`}
-            headline={`Lorem Ipsum Dolor Sit Amet`}
-            goToSectionRef={section1}
+            image={`/images/3.png`}
+            title={`Comfortable and luxurious design`}
+            headline={`Materials derived from ocean plastics`}
+            goToSectionRef={section4}
             scrollTo={scrollTo}
-            showArrow={false}
+            showArrow={true}
           />
         </div>
         <div ref={section4} id="fourth">
           <Mysection
             image={`/images/2.png`}
-            headline={`Lorem Ipsum Dolor Sit Amet`}
-            goToSectionRef={section3}
+            title={`Choose nori, moss, or sea grapes`}
+            headline={`a masterpiece of innovation and elegance`}
+            goToSectionRef={section5}
             scrollTo={scrollTo}
             showArrow={true}
           />
         </div>
         <div ref={section5} id="fifth">
           <Mysection
-            image={`/images/8.png`}
-            headline={`Lorem Ipsum Dolor Sit Amet`}
+            image={`/images/t1.png`}
+            title={`from the ocean, for the ocean`}
+            headline={`an Amphibious vehicle for the ocean’s future`}
             goToSectionRef={section1}
             scrollTo={scrollTo}
             showArrow={false}
